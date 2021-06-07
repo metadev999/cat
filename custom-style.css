@@ -299,6 +299,10 @@ a:visited {
     border-bottom: none !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover,
 a:focus,
 a:active {
