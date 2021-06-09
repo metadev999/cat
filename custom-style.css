@@ -247,6 +247,76 @@ p+[class*=btn] {
     margin-top: 15px;
 }
 
+.timer .container {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.timer h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+}
+
+.timer li {
+    display: inline-block;
+    font-size: 18px;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    background: #65dae3;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 60%);
+}
+
+.timer {
+    text-align: center;
+    margin: -20px auto;
+    background: #eee;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 20px;
+    z-index: 6;
+    position: relative;
+    border: 3px solid #e47a30;
+}
+
+.timer li span {
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.timer .emoji {
+    display: none;
+    padding: 1rem;
+}
+
+.timer .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+    .timer h1 {
+        font-size: 1.5rem;
+    }
+    .timer li {
+        font-size: 7px;
+        padding: .75rem;
+    }
+    .timer li span {
+        font-size: 18px;
+    }
+    .timer {
+        margin: 20px 20px;
+    }
+}
+
 @media (min-width: 576px) {
     p {
         font-size: 16px;
@@ -4657,6 +4727,10 @@ hr {
 .login-box form a {
     border-radius: 50px !important;
     border: 2px solid #c9f2ee;
+}
+
+body .login-box {
+    margin-top: 0 !important;
 }
 
 .btn-primary:hover:focus,
